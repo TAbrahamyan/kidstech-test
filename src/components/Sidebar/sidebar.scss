@@ -1,0 +1,36 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 264px;
+  height: max-content;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid #cfcfe4;
+
+  .tag {
+    padding: 12px 0;
+    border-radius: 12px;
+    cursor: pointer;
+
+    h1 {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      color: #39414b;
+      margin: 0 12px;
+    }
+  }
+
+  .selectedTag {
+    background: #5fbf77;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  @media (max-width: 992px) {
+    max-width: calc(100% - 24px);
+  }
+}
